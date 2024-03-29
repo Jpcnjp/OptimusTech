@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --fonte-principal: "Inter", sans-serif;
+    
+    --cor-do-texto-da-logo: #3A404E;
+    --cor-primaria: #667085;
+    --cor-secundaria: #8E2424;
+    --cor-terciaria: #101828;
+    --cor-do-texto-botão: #ffffff;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}
+
+.navbar_container, .navbar_logo,
+.navbar_lista, .navbar_login {
+    display: flex;
+}
+
+.navbar_container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.6rem 7rem;
+}
+
+.navbar_logo, .navbar_login{
+    align-items: center;
+}
+
+.navbar_logo_texto {
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--cor-do-texto-da-logo);
+}
+
+.navbar_container_lista {
+    margin-right: 18rem;
+}
+
+.navbar_lista_item {
+    padding: 0 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.navbar_lista_link,.navbar_login_link {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.navbar_login_item {
+    padding: 0 2rem;
+}
+
+.navbar_login_item_cadastro {
+    background-color: var(--cor-secundaria);
+    padding: 1rem 1.1rem;
+    border-radius: 8px;
+}
+
+.navbar_login_link_cadastro {
+    text-decoration: none;
+    color: var(--cor-do-texto-botão);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 6rem 0;
+}
+
+.cabecalho_texto {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho_titulo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.cabecalho_descricao {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    width: 52%;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+}
+
+.metricas {
+    display: flex;
+    margin: 0 9rem;
+    gap: 2rem;
+}
+
+.metricas_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+.metricas_titulo {
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.metricas_subtitulo {
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--cor-terciaria)
+}
+
+.metricas_texto {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--cor-primaria);
+    width: 17.5rem;
+}
+
