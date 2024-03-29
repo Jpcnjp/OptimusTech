@@ -1,6 +1,6 @@
 <h1>OptimusTech</h1>
 
-<h2>7daysofcode</h2>
+<h2>#7daysofcode</h2>
 
 Fui desafiado pela Alura a fazer uma pagina de uma empresa de TI que está precisando fazer contratações.
 
