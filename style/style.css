@@ -3,15 +3,23 @@
 :root {
     --fonte-principal: "Inter", sans-serif;
     
-    --cor-do-texto-da-logo: #3A404E;
     --cor-primaria: #667085;
     --cor-secundaria: #8E2424;
     --cor-terciaria: #101828;
     --cor-do-texto-botão: #ffffff;
+    --cor-do-texto-da-logo: #3A404E;
+    --cor-do-texto-direitos: #98A2B3;
+    --cor-do-background-transparente-vagas: #8e24240d;
+    --cor-do-background-transparente-depoimento: #c3191908;
+    --cor-do-background-transparente-formulario: #F9FAFB;
+    --cor-da-borda-vagas: #EAECF0;
+    --cor-da-borda-email: #D0D5DD;
 }
 
 body {
     font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .navbar_container, .navbar_logo,
@@ -42,8 +50,6 @@ body {
 
 .navbar_lista_item {
     padding: 0 1.5rem;
-    font-weight: 500;
-    font-size: 1rem;
 }
 
 .navbar_lista_link,.navbar_login_link {
@@ -55,15 +61,14 @@ body {
     padding: 0 2rem;
 }
 
-.navbar_login_item_cadastro {
+.botao_cadastro {
     background-color: var(--cor-secundaria);
     padding: 1rem 1.1rem;
-    border-radius: 8px;
-}
-
-.navbar_login_link_cadastro {
-    text-decoration: none;
+    border-radius: 0.5rem;
     color: var(--cor-do-texto-botão);
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .cabecalho {
@@ -90,20 +95,22 @@ body {
     font-size: 1.25rem;
     font-weight: 400;
     color: var(--cor-primaria);
-    width: 52%;
+    width: 49rem;
     text-align: center;
     line-height: 2rem;
     margin-bottom: 4rem;
 }
 
-.metricas {
+.metricas, .metricas_container {
     display: flex;
+}
+
+.metricas {
     margin: 0 9rem;
     gap: 2rem;
 }
 
 .metricas_container {
-    display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 6rem;
@@ -129,3 +136,158 @@ body {
     width: 17.5rem;
 }
 
+.vagas_cabecalho,.vagas,
+.vagas_lista {
+    display: flex;
+}
+
+.vagas_cabecalho, .vagas {
+    flex-direction: column;
+}
+
+.vagas_cabecalho, .vagas_lista {
+    gap: 1.5rem;
+}
+
+.vagas_cabecalho {
+    align-items: center;
+    margin: 6rem 0 4rem 0;
+}
+
+.vagas_cabecalho_texto {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    color: var(--cor-secundaria);
+    background-color:var(--cor-do-background-transparente-vagas);
+}
+
+.vagas_cabecalho_titulo {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.vagas_cabecalho_descricao {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+}
+
+.vagas_imagem {
+    margin: 0 9rem;
+}
+
+.vagas {
+    gap: 2rem;
+    margin: 4rem 22rem ;
+}
+
+.vagas_titulo {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+}
+
+.vagas_container {
+    border: 1px solid var(--cor-da-borda-vagas);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.vagas_descricao_titulo {
+    font-size:1.12rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: var(--cor-terciaria);
+}
+
+.vagas_lista_item {
+    color: var(--cor-primaria);
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 4rem;
+    margin: 0 7rem 6rem;
+    background-color: var(--cor-do-background-transparente-depoimento);
+    border-radius: 1rem;
+}
+
+.depoimento_descricao {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+    margin-bottom: 1rem;
+}
+
+.depoimento_titulo {
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+}
+
+.depoimento_imagem {
+    margin-bottom: 1rem;
+}
+
+.depoimento_nome {
+    margin-bottom: 0.7rem;
+    color: var(--cor-terciaria);
+}
+
+.depoimento_texto {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+}
+
+.rodape, .rodape_lista {
+    display: flex;
+    align-items: center;
+}
+
+.rodape_lista_email, .rodape_direitos {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.rodape {
+    flex-direction: column;
+    padding: 6rem 0;
+    background-color: var(--cor-do-background-transparente-formulario);
+}
+
+.rodape_titulo {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: var(--cor-terciaria);
+}
+
+.rodape_descricao {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-primaria);
+}
+
+.rodape_lista {
+    gap: 1rem;
+    margin: 2.5rem 0 2rem 0;
+}
+
+.rodape_lista_email {
+    width: 22.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--cor-da-borda-email);
+    border-radius: 0.5rem;
+    color: #667085;
+}
+
+.rodape_direitos {
+    color: var(--cor-do-texto-direitos);
+}
