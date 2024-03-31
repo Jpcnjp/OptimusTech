@@ -9,3 +9,5 @@ No #1 dia fiz a parte do topo da pagina que chamei de navbar.
 No #2 dia fiz o cabeçalho da pagina , que explica um pouco sobre a empresa.
 
 No #3 dia fiz as metricas da pagina, mostrando os resultados da pagina.
+
+No #4 dia fiz a parte de procura novos talentos da parte de vagas.
